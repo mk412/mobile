@@ -1,0 +1,88 @@
+/* mobile.css */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.nav{
+	position: relative;
+	/* oculto el menu mobile */
+	display: none;
+}
+
+.nav-mobile{
+	position: absolute;
+	right: 30px;
+	width: 400px;
+	display: none;
+	
+	list-style-type: none;
+	background-color: purple;
+}
+
+.nav-mobile a{
+	display: block;
+	padding: 20px;
+	background-color: pink;
+	border-bottom: 1px dashed white;
+	
+	color: white;
+	font-family: georgia;
+	text-decoration: none;
+}
+
+.nav-mobile a:hover{
+	background-color: lightblue;
+}
+
+.toggle{
+	display: block;
+}
+
+/* Menu escritorio */
+.nav-desktop{
+	max-width: 1000px;
+	background-color: violet;
+	display: flex;
+	list-style-type: none;
+}
+
+.nav-desktop li{
+	flex-grow: 1;
+}
+
+.nav-desktop a{
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+
+.nav-desktop a:hover{
+	color: black;
+}
+
+/* activo y desacrivo el menu mobile / desktop */
+@media (max-width: 767px){
+	.nav{ display: block;
+	}
+	
+	.nav-desktop{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,11 +4,48 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Sitio mobile</title>		
+		<link href="mobile.css" rel="stylesheet">
 	</head>
 	
 	<body>
-		<h1>Sitio mobile</h1>
+			
+		<ul class="nav-desktop">
+			<li><a href="#">Botón 1</a></li>
+			<li><a href="#">Botón 2</a></li>
+			<li><a href="#">Botón 3</a></li>
+		</ul>
+			
+		<div class="nav">
+			<button id="boton">Toggle</button>
 		
+			<ul class="nav-mobile" id="menu">
+				<li><a href="#">Botón 1</a></li>
+				<li><a href="#">Botón 2</a></li>
+				<li><a href="#">Botón 3</a></li>
+			</ul>
+		</div>
+		
+		<h1>Sitio mobile</h1>
+			
+		<script>
+			// comentario de una línea
+			
+			/* 
+			 comentario de
+			 varias líneas
+			*/
+			
+			boton.addEventListener(
+				"click",
+				function () {
+					// alert("Hiciste click!");
+					
+					menu.classList.toggle("toggle");
+				}
+			);
+			
+		</script>
+			
 	</body>
 </html>
 	
