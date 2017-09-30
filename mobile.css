@@ -12,15 +12,23 @@
 	display: none;
 }
 
+.nav button{
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+}
+
 .nav-mobile{
 	position: absolute;
-	right: 30px;
 	max-width: 400px;
+	left: 30px;
 	display: none;
 	
 	list-style-type: none;
 	background-color: purple;
 }
+
 
 .nav-mobile a{
 	display: block;
